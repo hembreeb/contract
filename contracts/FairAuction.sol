@@ -41,8 +41,7 @@ contract FairAuction is Ownable, ReentrancyGuard {
     address public immutable treasury; // treasury multisig, will receive raised amount
 
     bool public unsoldTokensBurnt;
-
-    address public wfil = 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE;
+    address public wfil = 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE; //This is not a real address. If the sale token is the same as this address, it means that only fil is accepted
 
     constructor(
         IERC20 projectToken,
